@@ -10,18 +10,18 @@
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135626760-1"></script>
 	<script src="JavaScript/Google-Analytics.js"></script>
-	<script async src="JavaScript/Menu.js"></script>
 	<script src="JavaScript/Custom-Song.js"></script>
+	<link rel="prefetch" href="/San Dingo  Syndicates Breath [Synthwave] from Royalty Free Planet.mp3">
 
 </head>
 
 <body>
 	<div class="Music-Player">
-		<audio id="Songs">
-		  <source src="Three Chain Links  Missing You [Synthwave] from Royalty Free Planet.mp3" type="audio/mpeg">
-		  Your browser does not support the audio element.
+		<audio id="Easter-Egg">
+			<source src="San Dingo  Syndicates Breath [Synthwave] from Royalty Free Planet.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
 		</audio>
-
+		<script src="JavaScript/Easter-Egg.js"></script>
 		<h1 onclick="playSongs()">Roasted Bunny's Music Player</h1>
 	</div>
 	<p> Listen to all of the songs I have made.<br> A couple are from Magix Music Maker while others are from MTV Music Generator which is music software for the PlayStation 1. </p>
@@ -53,6 +53,7 @@
 			<source src="Roasted Bunnys Own Song.mp3" type="audio/mpeg">
 	</div>
 	</audio>
+	<script src="JavaScript/Menu.js"></script>
 	<p>Want to play your own music? Just browse to your music file and it will automatically play for you!</p>
 	<input type="file" id="upload" accept="audio/*" /> <br> <br>
 	<audio controls id="music"></audio>
@@ -62,20 +63,6 @@
 		<p><a href="about.html" target="_blank">About</a></p>
 		<p><a href="https://github.com/Roasted-Bunny/Roasted-Bunny-s-Music-Player/blob/master/index.html" target="_blank">Source Code</a></p>
 	</div>
-	<script>
-		var i = "off";
-		var x = document.getElementById("Songs"); 
-
-		function playSongs() { 
-			if (i == "off") {
-				x.play();
-				i = "on";
-			} else {
-				x.pause();
-				i = "off";
-			}
-		}
-	</script>
 </body>
 
 </html>
