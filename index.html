@@ -12,11 +12,17 @@
 	<script src="JavaScript/Google-Analytics.js"></script>
 	<script async src="JavaScript/Menu.js"></script>
 	<script src="JavaScript/Custom-Song.js"></script>
+
 </head>
 
 <body>
 	<div class="Music-Player">
-		<h1 onclick="window.location.href='Three Chain Links  Missing You [Synthwave] from Royalty Free Planet.mp3'">Roasted Bunny's Music Player</h1>
+		<audio id="Songs">
+		  <source src="Three Chain Links  Missing You [Synthwave] from Royalty Free Planet.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio>
+
+		<h1 onclick="playSongs()">Roasted Bunny's Music Player</h1>
 	</div>
 	<p> Listen to all of the songs I have made.<br> A couple are from Magix Music Maker while others are from MTV Music Generator which is music software for the PlayStation 1. </p>
 	<img src="music.png" alt="Music icon" height="100" width="100">
@@ -56,6 +62,20 @@
 		<p><a href="about.html" target="_blank">About</a></p>
 		<p><a href="https://github.com/Roasted-Bunny/Roasted-Bunny-s-Music-Player/blob/master/index.html" target="_blank">Source Code</a></p>
 	</div>
+	<script>
+		var i = "off";
+		var x = document.getElementById("Songs"); 
+
+		function playSongs() { 
+			if (i == "off") {
+				x.play();
+				i = "on";
+			} else {
+				x.pause();
+				i = "off";
+			}
+		}
+	</script>
 </body>
 
 </html>
