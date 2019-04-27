@@ -12,6 +12,7 @@
 	<script src="./JavaScript/Google-Analytics.js"></script>
 	<script src="./JavaScript/Custom-Song.js"></script>
 	<script src="./JavaScript/Pause-Audio.js"></script>
+	<script src="./JavaScript/Now-Playing.js"></script>
 	<link rel="prefetch" href="./San Dingo  Syndicates Breath [Synthwave] from Royalty Free Planet.mp3">
 
 </head>
@@ -55,8 +56,10 @@
 	</div>
 	</audio>
 	<script src="./JavaScript/Menu.js"></script>
-	<p>Want to play your own music? Just browse to your music file and it will automatically play for you!</p>
-	<input type="file" id="upload" accept="audio/*" /> <br> <br>
+	<p id="playing">Want to play your own music? Just browse to your music file and it will automatically play for you!</p>
+	<input type="file" id="upload" accept="audio/*" onchange="nowPlaying();" hidden />
+	<button type="button" onclick="document.getElementById('upload').click();">Browse To Music File...</button>
+	<br> <br>
 	<audio controls id="music"></audio>
 	<div class="nav">
 		<p><a href="./copyright.html" target="_blank">Copyright Information</a></p>
@@ -64,6 +67,7 @@
 		<p><a href="./about.html" target="_blank">About</a></p>
 		<p><a href="https://github.com/Roasted-Bunny/Roasted-Bunny-s-Music-Player/blob/master/index.html" target="_blank">Source Code</a></p>
 	</div>
+
 </body>
 
 </html>
