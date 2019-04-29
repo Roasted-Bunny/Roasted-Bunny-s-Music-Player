@@ -15,7 +15,7 @@ body {
 
 .Songs {}
 
-p {
+p, .field {
   text-align: center;
   font-family: georgia;
   font-size: 20px;
