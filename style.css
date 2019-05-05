@@ -9,12 +9,6 @@
   font-family: Impact, Arial;
 }
 
-body {
-  background-color: #5989ea;
-}
-
-.Songs {}
-
 p, .field {
   text-align: center;
   font-family: georgia;
@@ -57,4 +51,11 @@ h1 {
 .contact {
   text-align: center;
   font-size: 25px;
+}
+
+html {
+  background: linear-gradient(to bottom,  #5989ea, #fcb825);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
