@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="preload" href="./style.css" as="style">
-	<link href="/Fontawesome/css/all.css" rel="stylesheet"> 
+	<link href="/Fontawesome/css/all.css" rel="stylesheet">
 	<meta property="og:image" content="screenshot-musicplayer.roastedbunny.co.uk-2019.04.29-19-32-31.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
 	<script src="./JavaScript/Custom-Song.js"></script>
 	<script src="./JavaScript/Pause-Audio.js"></script>
 	<script src="./JavaScript/Now-Playing.js"></script>
+	<script src="./JavaScript/URL-Song.js"></script>
 	<link rel="prefetch" href="./San Dingo  Syndicates Breath [Synthwave] from Royalty Free Planet.mp3">
 
 </head>
@@ -30,9 +31,12 @@
 		<h1 onclick="playSongs()">Roasted Bunny's Music Player</h1>
 	</div>
 	<p> Listen to all of the songs I have made.<br> A couple are from Magix Music Maker while others are from MTV Music Generator which is music software for the PlayStation 1. </p>
-	<img src="./music.png" alt="Music icon" height="100" width="100">
+	<img src="./music.png" alt="Music icon" height="100" width="100" onclick="playURL();">
 	<button class="collapsible">View Songs</button>
 	<div class="Songs">
+		<audio controls>
+			<source src="./Synthroast.mp3" type="audio/mpeg">
+			alt="Audio not supported"</audio>
 		<audio controls>
 			<source src="./Roastedbunnyracingmix.mp3" type="audio/mpeg">
 			alt="Audio not supported"</audio>
@@ -62,6 +66,8 @@
 	<p id="playing">Want to play your own music? Just browse to your music file and it will automatically play for you!</p>
 	<input type="file" id="upload" accept="audio/*" onchange="nowPlaying();" hidden />
 	<button type="button" onclick="document.getElementById('upload').click();">Browse To Music File...</button>
+	<button type="button" onclick="uRL();">Play Song From URL...</button>
+	<div id="URL"></div>
 	<br> <br>
 	<audio controls id="music"></audio>
 	<div class="nav">
