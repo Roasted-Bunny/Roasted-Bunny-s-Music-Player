@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
 	<link rel="preload" href="./style.css" as="style">
 	<link href="/Fontawesome/css/all.css" rel="stylesheet">
 	<meta property="og:image" content="screenshot-musicplayer.roastedbunny.co.uk-2019.04.29-19-32-31.png">
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+
 	<div class="Music-Player">
 		<audio id="Easter-Egg">
 			<source src="./San Dingo  Syndicates Breath [Synthwave] from Royalty Free Planet.mp3" type="audio/mpeg">
@@ -30,10 +32,27 @@
 		<script src="./JavaScript/Easter-Egg.js"></script>
 		<h1 onclick="playSongs()">Roasted Bunny's Music Player</h1>
 	</div>
-	<p> Listen to all of the songs I have made.<br> A couple are from Magix Music Maker while others are from MTV Music Generator which is music software for the PlayStation 1. </p>
+	<style>
+		nav li .home {
+			background-color: white;
+		}
+	</style>
+	<nav>
+		<ul>
+			<li><a class="home" href="./index.html" <i class="fas fa-home"></i><strong> Home</strong></a></li>
+			<li><a href="./copyright.html" <i class="far fa-copyright"><strong> Copyright Information</strong></i></a></li>
+			<li><a href="./faq.html" <i class="fas fa-question-circle"><strong> FAQ</strong></i></a></li>
+			<li><a href="./about.html" <i class="fas fa-info-circle"><strong> About</strong></i></a></li>
+			<li><a href="https://github.com/Roasted-Bunny/Roasted-Bunny-s-Music-Player/blob/master/index.html" target="_blank" <i class="fas fa-code"><strong> Source Code</strong></i></a></li>
+		</ul>
+	</nav>
+	<p> Listen to all of the songs I have made.<br> Some are made with Magix Music Maker, MTV Music Generator and my Yamaha Keyboard.</p>
 	<img src="./music.png" alt="Music icon" height="100" width="100" onclick="playURL();">
 	<button class="collapsible">View Songs</button>
 	<div class="Songs">
+		<audio controls>
+			<source src="./Yamaha Keyboard Song.mp3" type="audio/mpeg">
+			alt="Audio not supported"</audio>
 		<audio controls>
 			<source src="./Synthroast.mp3" type="audio/mpeg">
 			alt="Audio not supported"</audio>
@@ -70,13 +89,6 @@
 	<div id="URL"></div>
 	<br> <br>
 	<audio controls id="music"></audio>
-	<div class="nav">
-		<p><a href="./copyright.html" target="_blank" <i class="far fa-copyright"> Copyright Information</i></a></p>
-		<p><a href="./faq.html" target="_blank" <i class="fas fa-question-circle"> FAQ</i></a></p>
-		<p><a href="./about.html" target="_blank" <i class="fas fa-info-circle"> About</i></a></p>
-		<p><a href="https://github.com/Roasted-Bunny/Roasted-Bunny-s-Music-Player/blob/master/index.html" target="_blank" <i class="fas fa-code"> Source Code</i></a></p>
-	</div>
-
 </body>
 
 </html>
