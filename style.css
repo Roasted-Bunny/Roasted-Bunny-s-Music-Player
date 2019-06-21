@@ -76,9 +76,12 @@ nav a:link, nav a:visited {
   border-style: outset;
   background-color:  #99764e;
   font-size: 25px;
-  padding: 3px;
+  padding: 10px;
+  margin: 10px;
+  width: 199px;
 }
 
 nav a:hover {
   background-color: white;
+  color: #99764e;
 }
