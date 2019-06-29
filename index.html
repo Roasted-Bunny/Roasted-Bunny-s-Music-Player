@@ -83,8 +83,8 @@
 	<script src="./JavaScript/Menu.js"></script>
 	<p id="playing">Want to play your own music? Just browse to your music file and it will automatically play for you!</p>
 	<input type="file" id="upload" accept="audio/*" onchange="nowPlaying();" hidden />
-	<button type="button" onclick="document.getElementById('upload').click();">Browse To Music File...</button>
-	<button type="button" onclick="uRL();">Play Song From URL...</button>
+	<i class="fas fa-upload fa-3x" onclick="document.getElementById('upload').click();"> </i> <br> <br> <br>
+	<i class="fas fa-link fa-3x" onclick="uRL();"></i>
 	<div id="URL"></div>
 	<br> <br>
 	<audio controls id="music"></audio>

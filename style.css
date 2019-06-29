@@ -52,7 +52,7 @@ h1 {
 
 html {
   font-family: 'Merriweather Sans', sans-serif;
-  background: linear-gradient(to bottom,  #5989ea, #fcb825);
+  background: linear-gradient(to bottom, #5989ea, #fcb825);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -64,17 +64,17 @@ nav a {
 }
 
 nav ul {
-list-style-type: none;
-text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 nav li {
   display: inline;
-
 }
+
 nav a:link, nav a:visited {
   border-style: outset;
-  background-color:  #99764e;
+  background-color: #99764e;
   font-size: 25px;
   padding: 10px;
   margin: 10px;
@@ -84,4 +84,10 @@ nav a:link, nav a:visited {
 nav a:hover {
   background-color: white;
   color: #99764e;
+  cursor: pointer;
+}
+
+i:hover {
+  color: #99764e;
+  cursor: pointer;
 }
