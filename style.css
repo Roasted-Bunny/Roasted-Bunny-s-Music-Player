@@ -1,11 +1,15 @@
 .Music-Player {
-  border: solid;
   border-radius: 50px;
   border-color: #57e544;
+  border-style: dashed;
+  width: 1000px;
+  position: relative;
+  left: 400px;
   background-color: #ff6100;
   color: #4c00ff;
   text-align: center;
   font-size: 20px;
+  font-family: 'Kalam', cursive;
 }
 
 p {
@@ -51,7 +55,7 @@ h1 {
 }
 
 html {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Literata', serif;
   background: linear-gradient(to bottom, #5989ea, #fcb825);
   background-repeat: no-repeat;
   background-size: cover;
