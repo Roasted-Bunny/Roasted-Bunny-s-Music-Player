@@ -89,6 +89,10 @@ nav a:hover {
   background-color: white;
   color: #99764e;
   cursor: pointer;
+  position: relative;
+  bottom: 10px;
+  transition: 2s;
+
 }
 
 i:hover {
