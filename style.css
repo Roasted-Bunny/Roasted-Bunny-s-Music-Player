@@ -1,8 +1,8 @@
 .Music-Player {
   border-radius: 50px;
-  border-color: #57e544;
-  border-style: dashed;
-  background-color: #ff6100;
+  border-color: #1f487e;
+  border-style: solid;
+  background-color: #1dbcdb;
   color: #4c00ff;
   text-align: center;
   font-size: 20px;
@@ -16,7 +16,7 @@ p {
 }
 
 .collapsible {
-  background-color: #00ff77;
+  background-color: #a2abb5;
   color: #444;
   cursor: pointer;
   padding: 15px;
@@ -27,15 +27,15 @@ p {
   font-size: 15px;
 }
 
-.active, .collapsible:hover {
-  background-color: #56ffa5;
+button::-moz-focus-inner {
+  border: 0;
 }
 
 .Songs {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #56ffa5;
+  background-color: #a2abb5;
 }
 
 h1 {
@@ -53,7 +53,7 @@ h1 {
 
 html {
   font-family: 'Literata', serif;
-  background: linear-gradient(to bottom, #5989ea, #fcb825);
+  background: linear-gradient(to bottom, #5989ea, #78c0e0);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -75,7 +75,7 @@ nav li {
 
 nav a:link, nav a:visited {
   border-style: outset;
-  background-color: #99764e;
+  background-color: #a2abb5;
   font-size: 25px;
   padding: 10px;
   margin: 10px;
@@ -84,7 +84,7 @@ nav a:link, nav a:visited {
 
 nav a:hover {
   background-color: white;
-  color: #99764e;
+  color: #34435e
   cursor: pointer;
   position: relative;
   bottom: 10px;
